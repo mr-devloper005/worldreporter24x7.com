@@ -16,9 +16,9 @@ export const revalidate = 300
 export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
     path: '/press-releases',
-    title: 'Press Releases - Worldreporter 24 X 7',
-    description: 'Latest press releases and company announcements from Worldreporter 24 X 7. Stay updated with industry news and corporate communications.',
-    keywords: ['press releases', 'company announcements', 'news', 'media', 'corporate communications'],
+    title: 'Press Media - Worldreporter 24 X 7',
+    description: 'Latest press media and company announcements from Worldreporter 24 X 7. Stay updated with industry news and corporate communications.',
+    keywords: ['press media', 'company announcements', 'news', 'media', 'corporate communications'],
   })
 }
 
@@ -51,8 +51,8 @@ export default async function PressReleasesPage() {
     {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
-      name: 'Press Releases',
-      description: 'Latest press releases and company announcements',
+      name: 'Press Media',
+      description: 'Latest press media and company announcements',
       url: `${SITE_CONFIG.baseUrl}/press-releases`,
     },
   ]
@@ -68,7 +68,7 @@ export default async function PressReleasesPage() {
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="mx-auto max-w-4xl text-center">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Press Releases
+                Press Media
               </h1>
               <p className="mt-6 text-xl text-white/90">
                 Stay updated with the latest company announcements and industry news
@@ -87,7 +87,7 @@ export default async function PressReleasesPage() {
                   <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-[#9a9a9a]" />
                   <input
                     type="text"
-                    placeholder="Search press releases..."
+                    placeholder="Search press media..."
                     className="w-full rounded-lg border border-[#d9d9d9] py-3 pl-12 pr-4 text-[#1c1c1c] placeholder-[#8a8a8a] focus:border-[#ea004f] focus:outline-none focus:ring-2 focus:ring-[#ea004f]/20"
                   />
                 </div>
@@ -129,10 +129,10 @@ export default async function PressReleasesPage() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h2 className="text-2xl font-semibold text-[#1c1c1c]">
-                  Latest Press Releases
+                  Latest Press Media
                 </h2>
                 <p className="mt-1 text-[#5f5f5f]">
-                  Showing {posts.length} recent press releases
+                  Showing {posts.length} recent press media
                 </p>
               </div>
               <div className="flex items-center gap-4">
@@ -168,7 +168,7 @@ export default async function PressReleasesPage() {
                     <Search className="h-12 w-12 text-[#9a9a9a]" />
                   </div>
                   <h3 className="mb-2 text-xl font-semibold text-[#1c1c1c]">
-                    No press releases found
+                    No press media found
                   </h3>
                   <p className="mb-6 text-[#5f5f5f]">
                     Try adjusting your search terms or filters to find what you're looking for.
@@ -213,7 +213,7 @@ export default async function PressReleasesPage() {
         <section className="bg-[#ea004f] py-16 text-white">
           <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Need Help with Your Press Release?
+              Need Help with Your Press Media?
             </h2>
             <p className="mt-4 text-xl text-white/90">
               Our team of experts is here to help you get maximum exposure for your announcements

@@ -8,21 +8,21 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen bg-[#f6f6f6] text-[#171717]">
       <NavbarShell />
-      <main className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 py-28 sm:px-6 lg:px-8 lg:py-36">
         <section className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
 
           {/* Left panel */}
           <div className="rounded-[2rem] bg-[#ea004f] p-8 text-white">
             <Globe2 className="h-8 w-8 text-white/80" />
             <h1 className="mt-5 text-4xl font-semibold tracking-[-0.05em]">
-              Start distributing your press releases
+              Start distributing your press media
             </h1>
             <p className="mt-5 text-sm leading-8 text-white/80">
               Create your account on {SITE_CONFIG.name} and reach journalists, readers, and search with wire-ready announcements.
             </p>
             <div className="mt-8 grid gap-3">
               {[
-                'Global press release distribution',
+                'Global press media distribution',
                 'Real-time media reach tracking',
                 '24/7 submission support',
               ].map((item) => (

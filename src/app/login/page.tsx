@@ -8,7 +8,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-[#f6f6f6] text-[#171717]">
       <NavbarShell />
-      <main className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 py-28 sm:px-6 lg:px-8 lg:py-36">
         <section className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr] lg:items-stretch">
 
           {/* Left panel */}
@@ -18,11 +18,11 @@ export default function LoginPage() {
               Sign in to your account
             </h1>
             <p className="mt-5 text-sm leading-8 text-white/80">
-              Submit press releases, track distribution, and manage your media presence on {SITE_CONFIG.name}.
+              Submit press media, track distribution, and manage your media presence on {SITE_CONFIG.name}.
             </p>
             <div className="mt-8 grid gap-3">
               {[
-                'Global press release distribution',
+                'Global press media distribution',
                 'Real-time media reach tracking',
                 '24/7 submission support',
               ].map((item) => (

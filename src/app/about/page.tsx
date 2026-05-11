@@ -12,8 +12,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
     path: '/about',
     title: 'About Us - Worldreporter 24 X 7',
-    description: 'Learn about Worldreporter 24 X 7, your trusted source for press releases and media distribution. Discover our mission, values, and team.',
-    keywords: ['about', 'press release distribution', 'media company', 'newsroom', 'our story'],
+    description: 'Learn about Worldreporter 24 X 7, your trusted source for press media and media distribution. Discover our mission, values, and team.',
+    keywords: ['about', 'press media distribution', 'media company', 'newsroom', 'our story'],
   })
 }
 
@@ -21,7 +21,7 @@ const stats = [
   {
     icon: FileText,
     value: '10,000+',
-    label: 'Press Releases Distributed',
+    label: 'Press Media Distributed',
   },
   {
     icon: Users,
@@ -39,12 +39,12 @@ const values = [
   {
     icon: Target,
     title: 'Mission',
-    description: 'To provide businesses and organizations with the most effective press release distribution platform, ensuring their stories reach the right audience at the right time.',
+    description: 'To provide businesses and organizations with the most effective press media distribution platform, ensuring their stories reach the right audience at the right time.',
   },
   {
     icon: Zap,
     title: 'Speed',
-    description: 'Rapid distribution ensures your press releases reach media outlets quickly, maximizing impact and relevance in today\'s fast-paced news cycle.',
+    description: 'Rapid distribution ensures your press media reach media outlets quickly, maximizing impact and relevance in today\'s fast-paced news cycle.',
   },
   {
     icon: Award,
@@ -57,12 +57,12 @@ const teamMembers = [
   {
     name: 'Sarah Johnson',
     role: 'CEO & Founder',
-    description: '20+ years in media and communications. Leading our vision for modern press release distribution.',
+    description: '20+ years in media and communications. Leading our vision for modern press media distribution.',
   },
   {
     name: 'Michael Chen',
     role: 'Head of Operations',
-    description: 'Expert in distribution logistics and media partnerships. Ensuring seamless delivery of your press releases.',
+    description: 'Expert in distribution logistics and media partnerships. Ensuring seamless delivery of your press media.',
   },
   {
     name: 'Emily Rodriguez',
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 About Worldreporter 24 X 7
               </h1>
               <p className="mt-6 text-xl text-white/90">
-                Your trusted partner for professional press release distribution and media outreach
+                Your trusted partner for professional press media distribution and media outreach
               </p>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
                 <h2 className="mb-4 text-3xl font-bold text-[#1c1c1c]">Our Story</h2>
                 <p className="mx-auto max-w-3xl text-lg text-[#5f5f5f]">
                   Founded with a simple mission: to bridge the gap between organizations and the media. 
-                  We believe every important story deserves to be heard, and every press release 
+                  We believe every important story deserves to be heard, and every press media 
                   should reach its intended audience.
                 </p>
               </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                     <h3 className="mb-3 text-xl font-semibold text-[#1c1c1c]">Our Solution</h3>
                     <p className="leading-relaxed text-[#5f5f5f]">
                       Worldreporter 24 X 7 provides a streamlined platform that connects your 
-                      press releases directly with verified media professionals. Our intelligent distribution 
+                      press media directly with verified media professionals. Our intelligent distribution 
                       system ensures your announcements reach the most relevant outlets for your industry 
                       and target audience.
                     </p>
@@ -235,16 +235,9 @@ export default function AboutPage() {
               Ready to Share Your Story?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Join thousands of organizations who trust us with their press release distribution
+              Join thousands of organizations who trust us with their press media distribution
             </p>
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Link
-                href="/pricing"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3 font-semibold text-[#ea004f] transition-colors hover:bg-gray-100"
-              >
-                View Pricing Plans
-                <ArrowRight className="h-4 w-4" />
-              </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-[#ea004f]"
