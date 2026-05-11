@@ -17,7 +17,6 @@ const topBarFeatures = [
 
 const navLinks = [
   { label: 'Latest News', href: '/press-releases' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]

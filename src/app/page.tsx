@@ -397,7 +397,7 @@ function EditorialHome({
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between gap-4">
             <div>
-              <h2 className="text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">Latest press releases</h2>
+              <h2 className="text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">Latest press media</h2>
               <p className="mt-2 text-sm text-[#616161] sm:text-base">Fresh updates from the newsroom and media desk.</p>
             </div>
             <Link href={primaryTask?.route || '/press-releases'} className="text-sm font-semibold text-[#ea004f] hover:opacity-80">
@@ -491,9 +491,6 @@ function EditorialHome({
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-center sm:px-6 lg:flex-row lg:px-8 lg:text-left">
           <h2 className="text-2xl font-semibold tracking-[-0.02em]">Ready to put your next launch on the wire?</h2>
           <div className="flex flex-wrap gap-3">
-            <Link href={primaryTask?.route || '/press-releases'} className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#ea004f]">
-              Compare plans
-            </Link>
             <Link href="/contact" className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white">
               Talk to us
             </Link>

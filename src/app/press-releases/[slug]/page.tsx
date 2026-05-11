@@ -20,19 +20,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!post) {
     return {
-      title: 'Press Release Not Found',
-      description: 'The requested press release could not be found.',
+      title: 'Press Media Not Found',
+      description: 'The requested press media could not be found.',
     }
   }
 
   return buildPageMetadata({
     path: `/press-releases/${slug}`,
     title: post.title,
-    description: post.summary || `Read the latest press release from ${SITE_CONFIG.name}`,
+    description: post.summary || `Read the latest press media from ${SITE_CONFIG.name}`,
     openGraphTitle: post.title,
     openGraphDescription: post.summary,
     image: post.media?.[0]?.url || '/og-default.png',
-    keywords: ['press release', 'announcement', 'news', ...(post.tags || [])],
+    keywords: ['press media', 'announcement', 'news', ...(post.tags || [])],
   })
 }
 
@@ -126,7 +126,7 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
               </Link>
               <span className="text-[#b5b5b5]">/</span>
               <Link href="/press-releases" className="text-[#5f5f5f] transition-colors hover:text-[#ea004f]">
-                Press Releases
+                Press Media
               </Link>
               <span className="text-[#b5b5b5]">/</span>
               <span className="font-medium text-[#1c1c1c]">{post.title}</span>
@@ -143,7 +143,7 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
                 className="inline-flex items-center gap-2 text-[#5f5f5f] transition-colors hover:text-[#ea004f]"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Back to Press Releases
+                Back to Press Media
               </Link>
             </div>
 
@@ -158,24 +158,13 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
                   
                   <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-[#5f5f5f]">
                     <div className="flex items-center gap-2">
-                      <Calendar className="h-4 w-4" />
-                      <time dateTime={publishDate.toISOString()}>
-                        {publishDate.toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </time>
-                    </div>
-                    
-                    <div className="flex items-center gap-2">
                       <User className="h-4 w-4" />
                       <span>{authorName}</span>
                     </div>
                     
                     <div className="flex items-center gap-2">
                       <span className="rounded-full bg-[#ea004f]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#ea004f]">
-                        Press Release
+                        Press Media
                       </span>
                     </div>
                   </div>
@@ -211,7 +200,7 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
                   ) : (
                     <div className="leading-relaxed text-[#303030]">
                       <p>
-                        This is a press release from {authorName}. For more information about this announcement, 
+                        This is a press media from {authorName}. For more information about this announcement, 
                         please contact our media relations team or visit our website for additional details.
                       </p>
                       <p className="mt-4">
@@ -225,7 +214,7 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
                 <div className="border-t border-[#ececec] pt-8">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="mb-4 text-lg font-semibold text-[#1c1c1c]">Share this Press Release</h3>
+                      <h3 className="mb-4 text-lg font-semibold text-[#1c1c1c]">Share this Press Media</h3>
                       <div className="flex gap-3">
                         <Link
                           href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${SITE_CONFIG.baseUrl}/press-releases/${post.slug}`)}`}
@@ -284,10 +273,10 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
                       <ArrowRight className="h-4 w-4" />
                     </Link>
                     <Link
-                      href="/pricing"
+                      href="/login"
                       className="flex items-center justify-between rounded-lg border border-[#d4d4d4] bg-white p-3 text-[#1c1c1c] transition-colors hover:border-[#ea004f] hover:text-[#ea004f]"
                     >
-                      <span className="font-medium">View Pricing Plans</span>
+                      <span className="font-medium">Submit a Press Media</span>
                       <ArrowRight className="h-4 w-4" />
                     </Link>
                   </div>
@@ -331,7 +320,7 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
         <section className="bg-[#f6f6f6] py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-[#1c1c1c]">More Press Releases</h2>
+              <h2 className="text-3xl font-bold text-[#1c1c1c]">More Press Media</h2>
               <p className="mt-2 text-lg text-[#5f5f5f]">
                 Stay updated with more company announcements and industry news
               </p>
@@ -353,7 +342,7 @@ export default async function PressReleasePage({ params }: { params: Promise<{ s
                 href="/press-releases"
                 className="inline-flex items-center gap-2 rounded-full bg-[#ea004f] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#d00046]"
               >
-                View All Press Releases
+                View All Press Media
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>

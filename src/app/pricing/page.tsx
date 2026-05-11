@@ -12,8 +12,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildPageMetadata({
     path: '/pricing',
     title: 'Pricing Plans - Worldreporter 24 X 7',
-    description: 'Choose the perfect pricing plan for your press release distribution needs. Basic, Pro, and Premium options available.',
-    keywords: ['pricing', 'press release', 'media distribution', 'basic plan', 'pro plan', 'premium plan'],
+    description: 'Choose the perfect pricing plan for your press media distribution needs. Basic, Pro, and Premium options available.',
+    keywords: ['pricing', 'press media', 'media distribution', 'basic plan', 'pro plan', 'premium plan'],
   })
 }
 
@@ -24,7 +24,7 @@ const pricingPlans = [
     period: 'per release',
     description: 'Perfect for small businesses and occasional announcements',
     features: [
-      'Single press release distribution',
+      'Single press media distribution',
       'Basic media outlet coverage',
       'Standard SEO optimization',
       'Email support',
@@ -76,7 +76,7 @@ const addOns = [
   {
     name: 'Express Distribution',
     price: '$150',
-    description: 'Get your press release distributed within 24 hours',
+    description: 'Get your press media distributed within 24 hours',
   },
   {
     name: 'Translation Services',
@@ -104,7 +104,7 @@ const faqs = [
     answer: "We offer a 30-day money-back guarantee for new customers. If you're not satisfied with our service, we'll provide a full refund.",
   },
   {
-    question: 'How quickly will my press release be distributed?',
+    question: 'How quickly will my press media be distributed?',
     answer: 'Standard distribution takes 3-5 business days. Express distribution is available as an add-on for 24-hour delivery.',
   },
   {
@@ -131,7 +131,7 @@ export default function PricingPage() {
                 Simple, Transparent Pricing
               </h1>
               <p className="mt-6 text-lg text-white/85 sm:text-xl">
-                Choose the perfect plan for your press release distribution needs
+                Choose the perfect plan for your press media distribution needs
               </p>
             </div>
           </div>
